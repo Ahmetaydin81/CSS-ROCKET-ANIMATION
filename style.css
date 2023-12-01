@@ -1,0 +1,32 @@
+body{
+    background:linear-gradient(300deg,silver,steelblue);
+    margin: 0;
+    height: 100vh;
+}
+
+.rocket{
+    width: 250px;
+    position: absolute;
+    right: 10%;
+    bottom: 0;
+    animation: rocket 20s alternate infinite;
+}
+@keyframes rocket{
+    0%{
+        bottom: 0;
+        opacity: 1;
+        transform: rotate(0deg);
+        scale: 1.0;
+    }
+    50%{
+        transform: rotate(-35deg);
+        right: 70%;
+        bottom:105%;
+        opacity: 0.1;
+        scale: 0.2;
+    }
+    100%{
+        left: 20%;
+        bottom: 0;
+    }
+}
